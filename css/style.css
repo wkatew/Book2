@@ -1,0 +1,76 @@
+@font-face {
+    font-family: special;
+    src: url(../font/specialelite-cyrillic.ttf);
+}
+@font-face {
+    font-family: might ;
+    src: url(../font/MightiestAutographPersonalUs.otf);
+}
+div, aside{
+    box-sizing: border-box;
+
+}
+.main{
+    width: 1000px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 150px 125px 1fr  150px;
+    grid-template-rows: 304px 1fr;
+}
+.logo{
+    grid-column: 1/3;
+}
+.header-text{
+    background: linear-gradient(#B0C4DE,#87CEEB,#1E90FF,#4169E1,#191970,#00008B);
+    grid-column: 3/5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: special;
+    font-size: 3rem;
+    text-shadow: 1px 1px 2px #0000CD;
+    color: black;
+}
+.nav{
+    grid-column: 1/2;
+}
+
+.content{
+    grid-column: 2/4;
+    padding: 0 20px;
+
+}
+.ad{
+    grid-column: 4/5;
+}
+.left{
+    float: left;
+    padding-right: 10px;
+}
+.right{
+    float: right;
+    padding-left: 10px;
+}
+h2{
+    font-family: might;
+    font-size: 2rem;
+}
+aside>ul{
+    background: #00008B;
+    list-style-type: none;
+    padding:20px 0 0 5px;
+    margin: 0;
+}
+.ul-pad{
+    text-align: left;
+
+
+  }
+  .ad, .nav{
+    width: 150px;;
+  }
+  .cl{
+    display: grid;
+    grid-template-columns: auto auto;
+    
+  }
